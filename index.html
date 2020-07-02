@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<script src="main.js"></script>
+		<title>Text editor</title>
+	</head>
+	<body>
+		<div class="grid-container">
+			<header>
+				<input type="text" name="Title" id="TitleInput" oninput="TitleUpdate(this)">
+			</header>
+			<nav>
+				<div>
+					<button class="navButton" onclick="FormatButtonPress('bold', this)" id="boldButton">Bold</button>
+					<button class="navButton" onclick="FormatButtonPress('italic', this)" id="italicButton">Italic</button>
+					<select name="font-size" id="fontSize" class="navSelect" onchange="FontSizeChange(this)">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3" selected>3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+					</select>
+					<select name="font-family" id="fontFamily" class="navSelect" onchange="FontFamilyChange(this)">
+						<option value="Arial" class="arial">Arial</option>
+						<option value="Cambria" class="cambria">Cambria</option>
+					</select>
+				</div>
+			</nav>
+			<aside>
+
+			</aside>
+			<main>
+				<div id="documentParent" contenteditable="true" class="arial" oninput="DocumentInput(this)"><span></span></div>
+			</main>
+			<footer>
+				<p>Text editor made by Elias Böök</p>
+			</footer>
+		</div>
+	</body>
+</html>

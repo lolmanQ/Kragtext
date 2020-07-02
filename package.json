@@ -1,0 +1,26 @@
+{
+  "name": "kragtext",
+  "version": "1.0.0",
+  "description": "Text editor",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lolmanQ/Kragtext.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lolmanQ/Kragtext/issues"
+  },
+  "homepage": "https://github.com/lolmanQ/Kragtext#readme",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.38"
+  }
+}

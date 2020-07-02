@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+}
+
+div.grid-container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'header header' 'nav nav' 'aside main' 'footer footer';
+  -ms-grid-columns: 100px auto;
+      grid-template-columns: 100px auto;
+  -ms-grid-rows: auto auto 100vh 100px;
+      grid-template-rows: auto auto 100vh 100px;
+}
+
+div.grid-container header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.grid-container nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.grid-container main {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.grid-container aside {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: aside;
+}
+
+div.grid-container footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+}
+
+button.navButton {
+  border-radius: 0;
+  outline: none;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: white;
+}
+
+button.navButton:active {
+  background-color: #c1ecea;
+}
+
+button.active {
+  background-color: #c1ecea;
+}
+
+input.navInput {
+  border-radius: 0;
+  outline: none;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: white;
+}
+
+input.navInput:focus {
+  background-color: #c1ecea;
+}
+
+select.navSelect {
+  border-radius: 0;
+  outline: none;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: white;
+}
+
+select.navSelect option {
+  height: 200px;
+  border-radius: 0;
+  outline: none;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: white;
+}
+
+input#TitleInput {
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: rgba(248, 248, 248, 0.829);
+  font-size: 2.5rem;
+  height: 2em;
+  text-align: center;
+}
+
+textarea#editorWindow {
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: rgba(248, 248, 248, 0.829);
+  width: 100%;
+  padding: 0;
+}
+
+#documentParent {
+  width: 60%;
+  min-height: 10vh;
+  background-color: rgba(248, 248, 248, 0.829);
+  outline: none;
+  padding: 70px 30px;
+}
+
+.arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cambria {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*# sourceMappingURL=style.css.map */
